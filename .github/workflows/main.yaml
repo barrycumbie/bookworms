@@ -18,7 +18,7 @@ jobs:
           chmod 600 private_key.pem # Set the appropriate permissions for the key file
 
           # Establish an SSH connection and execute commands on the remote server
-            ssh -o StrictHostKeyChecking=no -i private_key.pem -tt bcumbie@136.115.19.39 <<EOF          
+            ssh -o StrictHostKeyChecking=no -i private_key.pem -tt bcumbie@34.56.7.102 <<EOF          
             # Here Document, allows for multiple commands while connectd to server 
             cd bookworms #go to repo
             npm ci
